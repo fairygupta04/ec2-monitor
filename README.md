@@ -32,13 +32,13 @@ PID USER     %CPU %MEM COMMAND
 1   root      0.0  1.4  systemd
 ...
 
-## 📦 How to Use
+# 📦 How to Use
 
 1. Upload the `monitor.sh` file to your EC2 instance.
 
 2. Give it permission to run:
 
-    ```bash
+   ```bash
    chmod +x monitor.sh
    
 3.Run the script:
@@ -51,15 +51,21 @@ To make it run every day at 6 AM, add it to cron:
   crontab -e
   0 6 * * * /home/ubuntu/path/to/monitor.sh
   ```
+# 👀 How to View Logs
+
+    cd ~
+    ls monitor_log_*
+    cat monitor_log_2025-06-23_06-00.txt  # replace with actual filename
+
  
-🧪 Requirements
+# 🧪 Requirements
 
 AWS EC2 instance (Ubuntu)
 Bash
 cron installed (usually pre-installed)
 
 
-📬 Feel free to use or improve it
+# 📬 Feel free to use or improve it
 
 
 
