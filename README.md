@@ -37,9 +37,12 @@ PID USER     %CPU %MEM COMMAND
 1. Upload the `monitor.sh` file to your EC2 instance.
 
 2. Give it permission to run:
+
+    ```bash
    chmod +x monitor.sh
    
 3.Run the script:
+  
   ./monitor.sh
 
 To make it run every day at 6 AM, add it to cron:
