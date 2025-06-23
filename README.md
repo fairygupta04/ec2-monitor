@@ -42,13 +42,15 @@ PID USER     %CPU %MEM COMMAND
    chmod +x monitor.sh
    
 3.Run the script:
-  
+  ```bash
   ./monitor.sh
-
+  ```
 To make it run every day at 6 AM, add it to cron:
+
+  ```bash
   crontab -e
   0 6 * * * /home/ubuntu/path/to/monitor.sh
-
+  ```
  
 🧪 Requirements
 
